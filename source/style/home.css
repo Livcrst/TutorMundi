@@ -1,7 +1,26 @@
+html{
+    font-family: 'Londrina Solid', cursive;
+    
+}
+
 body{
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
+
+    
+}
+/* #wapred{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+#feedback{
+
+    font-weight: 400;
 }
