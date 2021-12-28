@@ -2,6 +2,7 @@ html{
     font-family: 'Londrina Solid', cursive;
 
     --background-blue: #2CC6D0;
+    --shadow: #2EAFB9;
     
 }
 
@@ -17,35 +18,49 @@ body, html{
 
     
 }
+
+/* Wrappeds  */
 #wrapped{
+
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+}
+#wrapped-feedback{
+
+    width: 18.5rem;
 
 }
 #feedback{
 
+    width: 100%;
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 2.5rem;
-    margin: 0;
+    margin: 1.5rem;
 }
-#stars-full{
-    display: none;
+#one-full,#two-full,#three-full, #four-full, #five-full{
 
+    display: none; 
 }
-#stars-empty > button, #skip{
+#stars-empty > button, #stars-full > button, #skip{
     background-color: #FFFFFF;
     border: none;
 }
-#stars-empty > button > img{
+#stars-empty > button > img, #stars-full > button > img{
 
-    width: 1.5rem;
+    width: 2rem;
         
 }
 
 /* Buttons */
+
+#buttons-control{
+    margin-top: 10.25rem;
+}
 #Confirm,#skip{
     font-family: Work Sans;
     font-style: normal;
@@ -60,8 +75,9 @@ background: var(--background-blue);
 color: white;
 font-weight: bold;
 
-box-shadow: -4px 12px 25px -10px var(--background-blue);
+box-shadow: -4px 12px 25px -10px var(--shadow);
 border-radius: 100px;
+border: none;
 
 padding: 0.5rem 1.5rem;
 
