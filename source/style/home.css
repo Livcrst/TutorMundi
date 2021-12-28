@@ -1,9 +1,11 @@
 html{
     font-family: 'Londrina Solid', cursive;
+
+    --background-blue: #2CC6D0;
     
 }
 
-body{
+body, html{
 
     display: flex;
     flex-direction: column;
@@ -11,16 +13,64 @@ body{
     align-items: center;
 
     width: 100%;
+    height: 100%;
 
     
 }
-/* #wapred{
+#wrapped{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-} */
+
+}
 #feedback{
 
     font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+}
+#stars-full{
+    display: none;
+
+}
+#stars-empty > button, #skip{
+    background-color: #FFFFFF;
+    border: none;
+}
+#stars-empty > button > img{
+
+    width: 1.5rem;
+        
+}
+
+/* Buttons */
+#Confirm,#skip{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+
+    font-size: 1rem;
+}
+
+#Confirm{
+
+background: var(--background-blue);
+color: white;
+font-weight: bold;
+
+box-shadow: -4px 12px 25px -10px var(--background-blue);
+border-radius: 100px;
+
+padding: 0.5rem 1.5rem;
+
+
+}
+
+#skip{
+
+    border: none;
+    color: var(--background-blue);
+    font-weight: bold;
 }
